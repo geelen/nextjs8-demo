@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
     "build:fab": "npm run build && npm run fab:compile",
     "fab:compile": "fab-nextjs build"
   },
