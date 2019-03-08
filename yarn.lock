@@ -658,9 +658,9 @@
     typescript "^3.3.1"
     webpack "^4.29.0"
 
-"@fab/nextjs@^0.1.0-2":
-  version "0.1.0-2"
-  resolved "https://registry.yarnpkg.com/@fab/nextjs/-/nextjs-0.1.0-2.tgz#a979dd67a6337351d8987c49a93fe56db6c6804f"
+"@fab/nextjs@^0.1.0-3":
+  version "0.1.0-3"
+  resolved "https://registry.yarnpkg.com/@fab/nextjs/-/nextjs-0.1.0-3.tgz#6786274404cce7794eb80dc2f5113fb8a99d78fd"
   dependencies:
     "@fab/compile" "^0.2.2"
     "@oclif/command" "^1"
@@ -672,7 +672,7 @@
     chalk "^2.4.1"
     fs-extra "^7.0.1"
     globby "^8.0.1"
-    memfs "^2.12.1"
+    memfs "2.12.1"
     mock-express-response "^0.2.2"
     tslib "^1"
 
@@ -2908,9 +2908,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-memfs@^2.12.1:
-  version "2.15.2"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.15.2.tgz#199b64580cf849ea641d8fac81d96742bfebd26d"
+memfs@2.12.1:
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.12.1.tgz#f239aeedebfa8bc160c0816f2828b0df6cdaa58c"
   dependencies:
     fast-extend "0.0.2"
     fs-monkey "^0.3.3"
