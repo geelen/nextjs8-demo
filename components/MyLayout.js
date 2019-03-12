@@ -1,16 +1,16 @@
 import Header from './Header'
+import styled from 'styled-components'
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
-}
+const Container = styled.div`
+  padding: 2rem;
+  font-family: Source Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+`
 
 const Layout = (props) => (
-  <div style={layoutStyle}>
+  <Container>
     <Header />
     {props.children}
-  </div>
+  </Container>
 )
 
 export default Layout
