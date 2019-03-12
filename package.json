@@ -8,13 +8,13 @@
     "build": "next build",
     "start": "next start",
     "build:fab": "npm run build && npm run fab:compile",
-    "fab:compile": "fab-nextjs build"
+    "fab:compile": "fab-nextjs build --server=fab-server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fab/nextjs": "^0.1.0-3",
+    "@fab/nextjs": "^0.1.0-5",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.3",

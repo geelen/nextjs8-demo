@@ -672,9 +672,9 @@
     typescript "^3.3.1"
     webpack "^4.29.0"
 
-"@fab/nextjs@^0.1.0-3":
-  version "0.1.0-3"
-  resolved "https://registry.yarnpkg.com/@fab/nextjs/-/nextjs-0.1.0-3.tgz#6786274404cce7794eb80dc2f5113fb8a99d78fd"
+"@fab/nextjs@^0.1.0-5":
+  version "0.1.0-5"
+  resolved "https://registry.yarnpkg.com/@fab/nextjs/-/nextjs-0.1.0-5.tgz#d400b1ea08538c4dade7b916bf48db28f7e23418"
   dependencies:
     "@fab/compile" "^0.2.2"
     "@oclif/command" "^1"
@@ -688,6 +688,7 @@
     globby "^8.0.1"
     memfs "2.12.1"
     mock-express-response "^0.2.2"
+    prettier "^1.16.4"
     tslib "^1"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
@@ -3630,6 +3631,10 @@ posix-character-classes@^0.1.0:
 postcss-value-parser@^3.3.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
+
+prettier@^1.16.4:
+  version "1.16.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
 
 private@^0.1.6:
   version "0.1.8"
