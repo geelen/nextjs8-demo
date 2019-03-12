@@ -672,9 +672,9 @@
     typescript "^3.3.1"
     webpack "^4.29.0"
 
-"@fab/nextjs@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@fab/nextjs/-/nextjs-0.1.0.tgz#2e2240d646f9110ed07b7ccb4fcfdb9820650c77"
+"@fab/nextjs@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@fab/nextjs/-/nextjs-0.1.1.tgz#1bfd2fe3f3a2e6393cff9f675bcbcbd6649a6960"
   dependencies:
     "@fab/compile" "^0.2.2"
     "@oclif/command" "^1"
