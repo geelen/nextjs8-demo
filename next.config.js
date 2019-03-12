@@ -1,4 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production'
+console.log({isProd})
+
 // next.config.js
 module.exports = {
-  target: "serverless",
-};
+  target: 'serverless',
+  assetPrefix: isProd ? '/_assets' : ''
+}
