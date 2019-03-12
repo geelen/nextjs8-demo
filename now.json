@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    {"src": "/p/(?<id>[^/]+)$", "dest": "/post?id=$id" }
+  ],
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
+}
