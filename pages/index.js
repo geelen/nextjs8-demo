@@ -19,7 +19,7 @@ const Index = props => (
 )
 
 Index.getInitialProps = async function() {
-  const tvShowName = FAB_SETTINGS.TV_SHOW_NAME || 'Batman'
+  const tvShowName = FAB_SETTINGS.TV_SHOW_NAME
 
   const res = await fetch('https://api.tvmaze.com/search/shows?q=' + tvShowName)
   const data = await res.json()
