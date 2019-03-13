@@ -6,15 +6,7 @@ import CoverGrid from '../components/CoverGrid'
 const Index = props => (
   <Layout>
     <h1>{props.tvShowName} TV Shows</h1>
-    <ul>
-      {props.shows.map(({ show }) => (
-        <li key={show.id}>
-          <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
-            <a>{show.name}</a>
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <CoverGrid shows={props.shows}/>
   </Layout>
 )
 
