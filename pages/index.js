@@ -29,7 +29,7 @@ Index.getInitialProps = async function() {
 
   console.log(`Show data fetched! Count: ${data.length}`)
 
-  console.log({shows})
+  console.log({data})
 
   return {
     tvShowName,
