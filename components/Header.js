@@ -1,15 +1,6 @@
 import Link from 'next/link'
-import styled from 'styled-components'
 import { FAB_SETTINGS } from '../utils'
-
-const A = styled.a`
-  color: inherit;
-  margin-right: 1rem;
-
-  &:hover {
-    color: darkorange;
-  }
-`
+import { A } from './Elements'
 
 const Header = () => (
   <div>
