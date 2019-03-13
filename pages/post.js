@@ -1,10 +1,19 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/MyLayout'
+import styled from 'styled-components'
+import { getLargeImage } from '../utils'
 
-const Post = props => (
+const Image = styled.img`
+  float: right;
+  max-width: 50%;
+  max-height: 80vh;
+  margin-left: 2rem;
+`
+
+const Post = ({show}) => (
   <Layout>
-    <h1>{props.show.name}</h1>
-    <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
-    <img src={props.show.image.medium} />
+    <Image src={getLargeImage(show.image)} />
+    <h1>{show.name}</h1>
+    <p>{show.summary.replace(/<[/]?p>/g, '')}</p>
   </Layout>
 )
 
