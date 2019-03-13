@@ -1,5 +1,6 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
+import { FAB_SETTINGS } from '../utils'
 
 const Index = props => (
   <Layout>
@@ -17,17 +18,12 @@ const Index = props => (
 )
 
 Index.getInitialProps = async function() {
-  const FAB_SETTINGS =
-    (typeof global !== 'undefined'
-      ? global.FAB_SETTINGS
-      : window.FAB_SETTINGS) || {}
   const tvShowName = FAB_SETTINGS.TV_SHOW_NAME || 'Batman'
 
   const res = await fetch('https://api.tvmaze.com/search/shows?q=' + tvShowName)
   const data = await res.json()
 
   console.log(`Show data fetched! Count: ${data.length}`)
-
   console.log({ shows: data })
 
   return {
