@@ -7,7 +7,6 @@
     "dev": "node server.js",
     "build": "rm -rf .next && NODE_ENV=production next build",
     "start": "next start",
-    "build:fab": "npm run build && npm run fab:compile",
     "fab:compile": "NODE_ENV=production fab-nextjs build --server=fab-server.js"
   },
   "keywords": [],
