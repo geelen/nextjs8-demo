@@ -3,7 +3,6 @@ const next = require('next')
 
 global.fetch = require('isomorphic-unfetch')
 
-console.log(process.env.NODE_ENV)
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
