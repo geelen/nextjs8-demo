@@ -6,6 +6,7 @@ const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
   font-family: Source Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #FFFFFFF;
 `
 
 const Layout = (props) => (
