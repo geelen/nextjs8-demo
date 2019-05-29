@@ -18,8 +18,11 @@ app.use((req, res, next) => {
   );
 });
 app.all("*", async (req, res) => {
+  console.log(req.query)
+  console.log(req.url)
   try {
-    const pathname = url.parse(req.url).pathname;
+    const pathname = req.query.path || url.parse(req.query.path).pathname;
+    console.log({pathname})
     if (pathname.startsWith("/_assets")) {
       //res.setHeader("Content-Type", getContentType(pathname));
       //res.setHeader("Cache-Control", "immutable");
@@ -28,7 +31,7 @@ app.all("*", async (req, res) => {
     } else {
       const method = req.method;
       const headers = req.headers;
-      const url = `${req.protocol}://${req.headers.host}${req.url}`;
+      const url = `${req.protocol}://${req.headers.host}${pathname}`;
       const fetch_req = new Request(
         url,
         Object.assign(

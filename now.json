@@ -1,5 +1,5 @@
 {
   "version": 2,
   "builds": [{ "src": "now-entry.js", "use": "@now/node" }],
-  "routes": [{ "src": "/*", "dest": "/now-entry.js" }]
+  "routes": [{ "src": "/(?<path>.*)", "dest": "/now-entry.js?path=/$path" }]
 }
