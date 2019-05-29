@@ -1,6 +1,7 @@
 const express = require("express");
 const concat = require("concat-stream");
 const url = require("url");
+global.fetch = require('node-fetch')
 
 const renderer = require("./.fab/build/server");
 
