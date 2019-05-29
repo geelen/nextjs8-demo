@@ -9,6 +9,7 @@
     "start": "fab-serve fab.zip",
     "build:fab": "npm run build && npm run fab:compile",
     "heroku-postbuild": "npm run build:fab",
+    "now-build": "npm run build:fab",
     "fab:compile": "NODE_ENV=production fab-nextjs build --server=fab-server.js"
   },
   "keywords": [],
