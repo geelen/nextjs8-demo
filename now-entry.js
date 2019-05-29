@@ -2,7 +2,10 @@ const express = require("express");
 const concat = require("concat-stream");
 const url = require("url");
 
-const renderer = require('.fab/build/server')
+const renderer = require("./.fab/build/server");
+
+const { Request, Response, Headers } = fetch;
+Object.assign(global, { fetch, Request, Response, Headers })
 
 const app = express();
 app.use((req, res, next) => {
@@ -20,7 +23,7 @@ app.all("*", async (req, res) => {
       //res.setHeader("Content-Type", getContentType(pathname));
       //res.setHeader("Cache-Control", "immutable");
       //res.end(files[pathname]);
-      res.status(404).send({ error: 'testing.' })
+      res.status(450).send({ error: "testing." });
     } else {
       const method = req.method;
       const headers = req.headers;
