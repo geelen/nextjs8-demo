@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "node server.js",
     "build": "rm -rf .next && NODE_ENV=production next build",
-    "start": "next start",
+    "start": "fab-serve fab.zip",
     "build:fab": "npm run build && npm run fab:compile",
+    "heroku-postbuild": "npm run fab:compile",
     "fab:compile": "NODE_ENV=production fab-nextjs build --server=fab-server.js"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@fab/nextjs": "^0.1.2",
+    "@fab/serve": "^0.1.4",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.3",
