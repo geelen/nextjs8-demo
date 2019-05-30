@@ -8,13 +8,25 @@ FABs are designed to compile _any_ frontend project and deploy them _anywhere th
 
 ## It lives!
 
-### Cloudflare Workers: http://nextjs-fab-cloudflare-workers.bitg.io/
+### Cloudflare Workers
 
-### Amazon Lambda@Edge: https://nextjs.linc-demo.sh/
+http://nextjs-fab-cloudflare-workers.bitg.io/
 
-### Now.sh: https://nextjs8-demo.glenmaddern.now.sh/
+### Amazon Lambda@Edge
 
-### Heroku: https://fab-nextjs.herokuapp.com/
+https://nextjs.linc-demo.sh/
+
+### Now.sh
+
+https://nextjs8-demo.glenmaddern.now.sh/
+
+### Heroku
+
+https://fab-nextjs.herokuapp.com/
+
+### Docker on AWS EC2
+
+https://nextjs8-demo.linc.sh/
 
 ## Some background
 
