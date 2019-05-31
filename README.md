@@ -4,13 +4,15 @@ This is a _proof of concept_ getting Frontend Application Bundles (FABs, see mor
 
 FABs are designed to compile _any_ frontend project and deploy them _anywhere that can run JS_:
 
-![keynote 001](https://user-images.githubusercontent.com/23264/58623411-01248800-82df-11e9-8641-cea4ad3b198d.png)
+<img width="640" alt="FAB diagram" src="https://user-images.githubusercontent.com/23264/58623411-01248800-82df-11e9-8641-cea4ad3b198d.png">
 
 ## It lives!
 
 ### Cloudflare Workers
 
 http://nextjs-fab-cloudflare-workers.bitg.io/
+
+<img width="480" alt="Cloudflare workers console screenshot" src="https://user-images.githubusercontent.com/23264/58699040-77cf8d00-8394-11e9-99e8-d039f9507c5f.png">
 
 ### Amazon Lambda@Edge
 
