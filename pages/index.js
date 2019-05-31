@@ -1,5 +1,4 @@
 import Layout from '../components/MyLayout.js'
-import Link from 'next/link'
 import { FAB_SETTINGS } from '../utils'
 import CoverGrid from '../components/CoverGrid'
 

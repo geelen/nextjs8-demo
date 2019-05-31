@@ -7,7 +7,7 @@ const getFabSettings = () => {
 
 export const FAB_SETTINGS = {
   get TV_SHOW_NAME() {
-    return getFabSettings().TV_SHOW_NAME || 'Batman'
+    return getFabSettings().TV_SHOW_NAME || 'Transformers'
   }
 }
 

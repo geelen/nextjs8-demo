@@ -17,7 +17,7 @@ const Show = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 210px;
+  flex: 1 0 200px;
   min-height: 380px;
 `
 
