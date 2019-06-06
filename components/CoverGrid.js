@@ -38,7 +38,7 @@ export default ({ shows }) => (
       <Show key={show.id}>
         <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`} passHref>
           <A bare>
-            <Image alt={`${show.name} poster`} src={getSmallImage(show.image)}/>
+            <Image alt={`${show.name} poster`} src={getSmallImage(show.image)} />
             <Title>{show.name}</Title>
           </A>
         </Link>

@@ -5,7 +5,7 @@ import CoverGrid from '../components/CoverGrid'
 const Index = props => (
   <Layout>
     <h1>{props.tvShowName} TV Shows</h1>
-    <CoverGrid shows={props.shows}/>
+    <CoverGrid shows={props.shows} />
   </Layout>
 )
 
@@ -15,12 +15,13 @@ Index.getInitialProps = async function() {
   const res = await fetch('https://api.tvmaze.com/search/shows?q=' + tvShowName)
   const data = await res.json()
 
-  console.log(`Show data fetched! Count: ${data.length}`)
-  console.log({ shows: data })
+  const shows = data.filter(({show}) => show.image)
+  console.log(`Show data fetched! Count: ${data.length}, ${shows.length} with images`)
+  console.log({ shows })
 
   return {
     tvShowName,
-    shows: data
+    shows
   }
 }
 

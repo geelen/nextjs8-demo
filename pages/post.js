@@ -1,3 +1,4 @@
+import React from 'react'
 import Layout from '../components/MyLayout'
 import styled from 'styled-components'
 import { getLargeImage } from '../utils'
@@ -9,11 +10,15 @@ const Image = styled.img`
   margin-left: 2rem;
 `
 
-const Post = ({show}) => (
+const Post = ({ show }) => (
   <Layout>
-    <Image src={getLargeImage(show.image)} />
+    {show.image && <Image src={getLargeImage(show.image)} />}
     <h1>{show.name}</h1>
-    <p>{show.summary.replace(/<[/]?p>/g, '')}</p>
+    {show.summary ? (
+      <p>{show.summary.replace(/<[/]?p>/g, '')}</p>
+    ) : (
+      <p>No summary provided.</p>
+    )}
   </Layout>
 )
 
