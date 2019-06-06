@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fab/nextjs": "^0.1.2",
+    "@fab/nextjs": "^0.2.0",
     "@fab/serve": "^0.1.4",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
