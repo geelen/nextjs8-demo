@@ -16,7 +16,7 @@ Index.getInitialProps = async function() {
   const data = await res.json()
 
   const shows = data.filter(({show}) => show.image)
-  console.log(`Show data fetched! Count: ${data.length}, ${shows.length} with images`)
+  console.log(`Show data fetched! Count: ${data.length} (${shows.length} with images)`)
   console.log({ shows })
 
   return {
